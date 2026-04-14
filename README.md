@@ -1,50 +1,46 @@
-# API REST em C# (.NET)
+API REST de Gerenciamento de Produtos
 
-Este projeto È uma API REST desenvolvida em C# utilizando ASP.NET Core Web API, com foco em aprendizado e construÁ„o de portfÛlio backend.
+API REST desenvolvida em C# com ASP.NET Core para gerenciamento de produtos, implementando opera√ß√µes CRUD completas, integra√ß√£o com banco de dados relacional e documenta√ß√£o interativa.
 
-A API implementa um CRUD completo de produtos, seguindo boas pr·ticas de organizaÁ„o e estruturaÁ„o de projetos.
+Tecnologias
+C#
+ASP.NET Core Web API
+Entity Framework Core
+SQL Server
+Swagger (OpenAPI)
 
----
+Arquitetura
 
-# Objetivo
+O projeto segue uma estrutura em camadas, separando responsabilidades em:
 
-Este projeto tem como objetivo demonstrar conhecimentos em:
+Controllers (camada de apresenta√ß√£o)
+Services (regras de neg√≥cio)
+Data/Repository (acesso a dados)
 
-- Desenvolvimento de APIs REST com C#
-- EstruturaÁ„o de projetos backend
-- OperaÁıes CRUD (Create, Read, Update, Delete)
-- Uso de Entity Framework Core
-- IntegraÁ„o com banco de dados
-- DocumentaÁ„o com Swagger
+Funcionalidades
+Cadastro de produtos
+Listagem de produtos
+Consulta por ID
+Atualiza√ß√£o de dados
+Remo√ß√£o de produtos
 
----
+Documenta√ß√£o
 
-# Tecnologias Utilizadas
+A API possui documenta√ß√£o interativa via Swagger dispon√≠vel ao executar o projeto.
 
-- C#
-- .NET (6/7/8)
-- ASP.NET Core Web API
-- Entity Framework Core
-- SQL Server (ou banco utilizado)
-- Swagger
-
----
-
-# Funcionalidades
-
-## Produtos (CRUD)
-
-- Criar produto
-- Listar todos os produtos
-- Buscar produto por ID
-- Atualizar produto
-- Remover produto
-
----
-
-# Como executar o projeto
-
-## 1. Restaurar dependÍncias
-
-```bash id="cs1"
+Como executar
+# Restaurar depend√™ncias
 dotnet restore
+
+# Aplicar migrations (caso utilize EF)
+dotnet ef database update
+
+# Executar aplica√ß√£o
+dotnet run
+
+A API estar√° dispon√≠vel em:
+https://localhost:5001
+
+Observa√ß√µes
+
+Projeto desenvolvido com foco em boas pr√°ticas de desenvolvimento backend, organiza√ß√£o de c√≥digo e integra√ß√£o com banco de dados.
